@@ -45,7 +45,7 @@ La API tiene un Controlador con dos endpoints:
 
 - **AIDatabaseSQL**  
   Este método mapea la estructura de la base de datos en un JSON que Gemini analiza para crear una consulta SQL, la cual es ejecutada por el servidor PostgreSQL directamente.  
-  Ya que este método no mapea los valores de la base de datos el uso de tokens es menor, y los datos que devuelve son mas fiables pues es el mismo Servidor el que los devuelve. Sin embargo, no evita completamente los errores que cometa la IA. A veces, la consulta SQL fallará debido a que la IA se inventa columnas que no existem, en ese caso el endpoint devolverá la consulta generada para que identifiques el fallo.
+  Ya que este método no mapea los valores de la base de datos el uso de tokens es menor, y los datos que devuelve son mas fiables pues es el mismo Servidor el que los devuelve. Sin embargo, no evita completamente los errores que cometa la IA. A veces, la consulta SQL fallará debido a que la IA se inventa columnas que no existen, en ese caso el endpoint devolverá la consulta generada para que identifiques el fallo.
 
 ## 💻 Tecnologías usadas
 
